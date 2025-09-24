@@ -4,5 +4,11 @@
 /career-conversation /redirects/career-conversation.html 302
 /ai-agentic-coder /redirects/ai-coder.html 302
 
+# Redirect /redirect/* to /* for all non-existing files
+/redirect/* /:splat 404
+
 # SPA catch-all - return 200 for all other requests
 /* /index.html 200
+
+# 404 handling for non-existent paths
+/* /404.html 404
