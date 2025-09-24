@@ -121,7 +121,7 @@ p {
     width: 0;
     background: var(--primary);
     border-radius: 2px;
-    animation: load 2s ease-in-out forwards;
+    animation: load 3s ease-in-out forwards;
 }
 
 @keyframes load {
