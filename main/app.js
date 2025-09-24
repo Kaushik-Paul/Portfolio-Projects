@@ -28,11 +28,27 @@ function init404Page() {
     // Handle redirect path for home link
     const homeLink = document.querySelector('.error-home-link');
     if (homeLink) {
-        if (window.location.pathname.startsWith('/redirect/')) {
+        // Get the current path
+        const currentPath = window.location.pathname;
+        
+        // If we're in a /redirect/ path, set the home link to /redirect/
+        if (currentPath.startsWith('/redirect/')) {
             homeLink.href = '/redirect/';
-        } else {
-            homeLink.href = '/';
+            console.log('Setting home link to /redirect/');
+        } 
+        // If we're in a 404 page from a /redirect/ path
+        else if (document.referrer && document.referrer.includes('/redirect/')) {
+            homeLink.href = '/redirect/';
+            console.log('Setting home link to /redirect/ (from referrer)');
         }
+        // Default to root
+        else {
+            homeLink.href = '/';
+            console.log('Setting home link to /');
+        }
+        
+        console.log('Current path:', currentPath);
+        console.log('Referrer:', document.referrer);
     }
     
     return true;
