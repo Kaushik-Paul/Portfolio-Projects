@@ -10,9 +10,6 @@
 /career-conversation /redirects/career-conversation.html 302
 /ai-agentic-coder /redirects/ai-coder.html 302
 
-# Handle /redirect/* paths
-/redirect/* /404.html 404
-
 # SPA catch-all - return 200 for all other HTML requests
 /*.html  /:splat  200
 
