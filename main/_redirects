@@ -1,8 +1,14 @@
-# Cloudflare Pages redirects - using 302 (temporary) redirects
+# Specific redirects
 /auto-ai-agents /redirects/ai-agents.html 302
 /stock-picker /redirects/stock-picker.html 302
 /career-conversation /redirects/career-conversation.html 302
 /ai-agentic-coder /redirects/ai-coder.html 302
 
-# SPA catch-all - return 200 for all other requests
-/* /index.html 200
+# Redirect /redirect/* to /*
+/redirect/*  /:splat  302
+
+# SPA catch-all - return 200 for all other HTML requests
+/*.html  /:splat  200
+
+# 404 handling for non-existent paths
+/*  /404.html  404

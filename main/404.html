@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="error-404">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Kaushik's Portfolio</title>
+    <meta name="description" content="The page you're looking for doesn't exist or has been moved.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/resources/rocket-blue.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/style.css" as="style">
+</head>
+<body>
+    <div class="bg-elements" id="bgElements"></div>
+    
+    <main class="error-container">
+        <div class="error-card">
+            <div class="astronaut" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3" />
+                    <path d="M12 2a8 8 0 0 0-8 8c0 1.5.5 3 2 4.5V22l3-1.5 3 1.5 3-1.5 3 1.5v-7.5c1.5-1.5 2-3 2-4.5a8 8 0 0 0-8-8z" />
+                </svg>
+            </div>
+            
+            <h1 class="error-code" aria-label="404 Error">404</h1>
+            <h2>Page Not Found</h2>
+            <p class="error-subtitle">The page you're looking for doesn't exist or has been moved.</p>
+            <a href="#" id="homeLink" class="error-home-link" aria-label="Return to homepage">
+                <span aria-hidden="true">←</span> Back to Home
+            </a>
+        </div>
+    </main>
+    
+    <script src="/app.js" defer></script>
+</body>
+</html>

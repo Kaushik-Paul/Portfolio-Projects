@@ -1,10 +1,67 @@
+// 404 Page Specific Functionality
+function init404Page() {
+    const bgElements = document.getElementById('bgElements');
+    if (!bgElements) return false;
+
+    const colors = ['#4f46e5', '#8b5cf6', '#6366f1', '#a78bfa'];
+    
+    // Create animated background elements
+    for (let i = 0; i < 15; i++) {
+        const element = document.createElement('div');
+        const size = Math.random() * 100 + 50;
+        const posX = Math.random() * 100;
+        const delay = Math.random() * 15;
+        const duration = 20 + Math.random() * 20;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        
+        element.className = 'bg-element';
+        element.style.width = `${size}px`;
+        element.style.height = `${size}px`;
+        element.style.left = `${posX}%`;
+        element.style.bottom = `-${size}px`;
+        element.style.background = color;
+        element.style.animation = `floatUp ${duration}s ${delay}s infinite linear`;
+        
+        bgElements.appendChild(element);
+    }
+
+    // Handle home link based on URL
+    const homeLink = document.getElementById('homeLink');
+    if (homeLink) {
+        // Check if we're in a /redirect/ path or came from one
+        const isFromRedirect = window.location.pathname.startsWith('/redirect/') || 
+                             (document.referrer && document.referrer.includes('/redirect/'));
+        
+        // Set the home link
+        homeLink.href = isFromRedirect ? '/redirect/' : '/';
+        
+        // Prevent default and use window.location for consistent behavior
+        homeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = isFromRedirect ? '/redirect/' : '/';
+        });
+    }
+    
+    return true;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-        duration: 800,
-        once: true,
-        easing: 'ease-in-out',
-    });
+    // Check if this is the 404 page
+    const is404Page = document.documentElement.classList.contains('error-404');
+    
+    // Initialize 404 page if this is the 404 page
+    if (is404Page && init404Page()) {
+        return; // Skip the rest of the initialization for 404 page
+    }
+    
+    // Initialize AOS (Animate On Scroll) for non-404 pages
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    }
 
     // Custom Cursor
     const cursor = document.querySelector('.cursor');
