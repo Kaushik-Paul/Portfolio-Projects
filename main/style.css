@@ -255,6 +255,206 @@ nav {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* 404 Page Styles */
+.error-404 {
+    --error-bg: #f9fafb;
+    --card-bg: #ffffff;
+    --error-primary: var(--primary-color);
+    --error-secondary: var(--secondary-color);
+}
+
+.error-404 body {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e4e8f0 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.error-container {
+    max-width: 32rem;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.error-card {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+.error-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--error-primary), var(--error-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    animation: bounce 2s infinite alternate;
+}
+
+.error-code::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--error-primary), var(--error-secondary));
+    border-radius: 2px;
+}
+
+.error-404 h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.error-subtitle {
+    color: var(--light-text);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.error-home-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    background: linear-gradient(45deg, var(--error-primary), var(--error-secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.error-home-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -2px rgba(37, 99, 235, 0.2);
+}
+
+.error-home-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.error-home-link:hover::before {
+    left: 100%;
+}
+
+.error-home-link i {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.error-home-link:hover i {
+    transform: translateX(3px);
+}
+
+.astronaut {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+}
+
+.astronaut svg {
+    width: 100%;
+    height: 100%;
+    color: var(--error-primary);
+}
+
+/* Background elements */
+.bg-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-element {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: floatUp 15s infinite linear;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    
+    .error-404 h1 {
+        font-size: 1.5rem;
+    }
+    
+    .error-subtitle {
+        font-size: 1rem;
+    }
+    
+    .astronaut {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .error-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
 .project-image {
     height: 200px;
     display: flex;

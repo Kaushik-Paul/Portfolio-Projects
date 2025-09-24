@@ -1,75 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="error-404">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found - Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-            background-color: #f9f9f9;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        h1 {
-            font-size: 4rem;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            margin-bottom: 2rem;
-        }
-        .emoji {
-            font-size: 5rem;
-            margin-bottom: 1rem;
-        }
-        .home-link {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            font-weight: 500;
-        }
-        .home-link:hover {
-            background-color: #2980b9;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 3rem;
-            }
-            .emoji {
-                font-size: 4rem;
-            }
-        }
-    </style>
+    <title>Page Not Found - Kaushik's Portfolio</title>
+    <meta name="description" content="The page you're looking for doesn't exist or has been moved.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="style.css" as="style">
 </head>
 <body>
-    <div class="emoji">🔍</div>
-    <h1>404</h1>
-    <p>Oops! The page you're looking for doesn't exist or has been moved.</p>
-    <a href="/" class="home-link">Return to Homepage</a>
+    <div class="bg-elements" id="bgElements"></div>
     
-    <script>
-        // Check if we're under /redirect/ path and update the home link if needed
-        if (window.location.pathname.startsWith('/redirect/')) {
-            const homeLink = document.querySelector('.home-link');
-            if (homeLink) {
-                homeLink.href = '/redirect/';
-            }
-        }
-    </script>
+    <main class="error-container">
+        <div class="error-card">
+            <div class="astronaut" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3" />
+                    <path d="M12 2a8 8 0 0 0-8 8c0 1.5.5 3 2 4.5V22l3-1.5 3 1.5 3-1.5 3 1.5v-7.5c1.5-1.5 2-3 2-4.5a8 8 0 0 0-8-8z" />
+                </svg>
+            </div>
+            
+            <h1 class="error-code" aria-label="404 Error">404</h1>
+            <h2>Page Not Found</h2>
+            <p class="error-subtitle">The page you're looking for doesn't exist or has been moved.</p>
+            <a href="/" class="error-home-link" aria-label="Return to homepage">
+                <span aria-hidden="true">←</span> Back to Home
+            </a>
+        </div>
+    </main>
+    
+    <script src="app.js" defer></script>
 </body>
 </html>
