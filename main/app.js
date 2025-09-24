@@ -25,30 +25,21 @@ function init404Page() {
         bgElements.appendChild(element);
     }
 
-    // Handle redirect path for home link
-    const homeLink = document.querySelector('.error-home-link');
+    // Handle home link based on URL
+    const homeLink = document.getElementById('homeLink');
     if (homeLink) {
-        // Get the current path
-        const currentPath = window.location.pathname;
+        // Check if we're in a /redirect/ path or came from one
+        const isFromRedirect = window.location.pathname.startsWith('/redirect/') || 
+                             (document.referrer && document.referrer.includes('/redirect/'));
         
-        // If we're in a /redirect/ path, set the home link to /redirect/
-        if (currentPath.startsWith('/redirect/')) {
-            homeLink.href = '/redirect/';
-            console.log('Setting home link to /redirect/');
-        } 
-        // If we're in a 404 page from a /redirect/ path
-        else if (document.referrer && document.referrer.includes('/redirect/')) {
-            homeLink.href = '/redirect/';
-            console.log('Setting home link to /redirect/ (from referrer)');
-        }
-        // Default to root
-        else {
-            homeLink.href = '/';
-            console.log('Setting home link to /');
-        }
+        // Set the home link
+        homeLink.href = isFromRedirect ? '/redirect/' : '/';
         
-        console.log('Current path:', currentPath);
-        console.log('Referrer:', document.referrer);
+        // Prevent default and use window.location for consistent behavior
+        homeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = isFromRedirect ? '/redirect/' : '/';
+        });
     }
     
     return true;
