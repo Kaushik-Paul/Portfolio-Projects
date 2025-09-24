@@ -26,10 +26,12 @@ function init404Page() {
     }
 
     // Handle redirect path for home link
-    if (window.location.pathname.startsWith('/redirect/')) {
-        const homeLink = document.querySelector('.error-home-link');
-        if (homeLink) {
+    const homeLink = document.querySelector('.error-home-link');
+    if (homeLink) {
+        if (window.location.pathname.startsWith('/redirect/')) {
             homeLink.href = '/redirect/';
+        } else {
+            homeLink.href = '/';
         }
     }
     
