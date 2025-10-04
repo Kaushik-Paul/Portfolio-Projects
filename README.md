@@ -32,19 +32,23 @@ Check out the live website: [https://projects.kaushikpaul.pp.ua/](https://projec
 
 ## 🚀 Projects Showcased
 
-1. **Auto AI Agents Creator**
+1. **Stock Market Portfolio Manager**
+   - AI-powered portfolio management tool
+   - Analyzes market trends and executes automated trades
+
+2. **Auto AI Agents Creator**
    - AI agents that collaborate to generate and refine ideas
    - Built with Microsoft Autogen
 
-2. **Stock Picker**
+3. **Stock Picker**
    - AI-powered stock analysis tool
    - Identifies trending companies and provides investment insights
 
-3. **AI Agentic Coder**
+4. **AI Agentic Coder**
    - Multi-agent AI that transforms ideas into production-ready apps
    - Handles coding, testing, and deployment
 
-4. **Career Conversation**
+5. **Career Conversation**
    - AI assistant for professional profiles
    - Provides career insights and answers experience-related questions
 
@@ -78,7 +82,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-For inquiries or collaboration opportunities, please reach out through my [LinkedIn](https://linkedin.com/in/your-profile) or [GitHub](https://github.com/your-username).
+For inquiries or collaboration opportunities, please reach out through my [LinkedIn](https://www.linkedin.com/in/kaushik-paul-767590215/), [GitHub](https://github.com/Kaushik-Paul), or email me at [support@kaushikpaul.pp.ua](mailto:support@kaushikpaul.pp.ua).
 
 ---
 
