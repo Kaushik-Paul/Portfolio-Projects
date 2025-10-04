@@ -80,6 +80,17 @@
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up">
                     <div class="project-image">
+                        <img src="resources/stock-market-agent.svg" alt="Stock Market Agent" class="project-svg">
+                    </div>
+                    <div class="project-info">
+                        <h3>Stock Market Portfolio Manager</h3>
+                        <p>AI-powered portfolio management tool that analyzes market trends and stock prices and trades stocks automatically.</p>
+                        <a href="redirects/stock-market-agent.html" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
                         <img src="resources/ai-agents.svg" alt="AI Agents" class="project-svg">
                     </div>
                     <div class="project-info">
@@ -173,23 +184,6 @@
             duration: 800,
             once: true
         });
-    </script>
-    <script>
-        // Handle project redirects
-        function redirectToProject(project) {
-            // This function is no longer needed as we're using direct links
-            // Keeping it for backward compatibility
-            const projectUrls = {
-                'ai-agents': 'https://huggingface.co/spaces/kaushikpaul/Auto-AI-Agents-Creator',
-                'stock-picker': 'https://huggingface.co/spaces/kaushikpaul/Stock-Picker',
-                'ai-coder': 'https://huggingface.co/spaces/kaushikpaul/AI-Agentic-Coder',
-                'career-conversation': 'https://huggingface.co/spaces/kaushikpaul/Career-Conversation'
-            };
-            
-            if (projectUrls[project]) {
-                window.location.href = projectUrls[project];
-            }
-        }
     </script>
     <script src="app.js"></script>
 </body>
