@@ -1,13 +1,13 @@
 # Kaushik Paul's Portfolio Projects
 
-[![Live Website](https://img.shields.io/badge/Live_Website-6c63ff?logo=rocket&logoColor=white&labelColor=5a52d3)](https://projects.kaushikpaul.pp.ua/)
+[![Live Website](https://img.shields.io/badge/Live_Website-6c63ff?logo=rocket&logoColor=white&labelColor=5a52d3)](https://projects.kaushikpaul.co.in/)
 [![Deployment](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-FF7139?logo=cloudflare)](https://pages.cloudflare.com/)
 
 A modern, responsive portfolio website showcasing my projects and skills as a Fullstack and AI Agents Developer. The website features a clean, interactive design with smooth animations and a custom 404 page.
 
 ## 🚀 Live Demo
 
-Check out the live website: [https://projects.kaushikpaul.pp.ua/](https://projects.kaushikpaul.pp.ua/)
+Check out the live website: [https://projects.kaushikpaul.co.in/](https://projects.kaushikpaul.co.in/)
 
 ## ✨ Features
 
@@ -72,7 +72,7 @@ Check out the live website: [https://projects.kaushikpaul.pp.ua/](https://projec
 
 ## 🌐 URL Structure
 
-- Main site: `https://projects.kaushikpaul.pp.ua/`
+- Main site: `https://projects.kaushikpaul.co.in/`
 - Project redirects (e.g., `/auto-ai-agents` → `/redirects/ai-agents.html`)
 - Custom 404 page for non-existent routes
 
@@ -82,7 +82,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-For inquiries or collaboration opportunities, please reach out through my [LinkedIn](https://www.linkedin.com/in/kaushik-paul-767590215/), [GitHub](https://github.com/Kaushik-Paul), or email me at [support@kaushikpaul.pp.ua](mailto:support@kaushikpaul.pp.ua).
+For inquiries or collaboration opportunities, please reach out through my [LinkedIn](https://www.linkedin.com/in/kaushik-paul-767590215/), [GitHub](https://github.com/Kaushik-Paul), or email me at [support@kaushikpaul.co.in](mailto:support@kaushikpaul.co.in).
 
 ---
 
