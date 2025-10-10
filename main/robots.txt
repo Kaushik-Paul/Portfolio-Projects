@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /resources/
+Disallow: /*.svg$
+
+# Sitemap location
+Sitemap: https://projects.kaushikpaul.co.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
