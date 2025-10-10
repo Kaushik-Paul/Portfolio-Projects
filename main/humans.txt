@@ -1,0 +1,18 @@
+/* TEAM */
+Developer: Kaushik Paul
+Site: https://projects.kaushikpaul.co.in
+Location: India
+Contact: contact@kaushikpaul.co.in
+GitHub: https://github.com/Kaushik-Paul
+LinkedIn: https://www.linkedin.com/in/kaushik-paul-767590215
+
+/* SITE */
+Last update: 2025/10/10
+Standards: HTML5, CSS3, JavaScript
+Components: AI Agents, Stock Market Tools, Fullstack Applications
+Software: Python, Django, Java, Spring Boot, CrewAI, LangGraph, Microsoft Autogen
+Keywords: Kaushik Paul, AI Developer, Fullstack Developer, AI Agents, Python Developer, Django Developer, Stock Market Agent, Machine Learning, Agentic AI
+
+/* THANKS */
+Font: Poppins from Google Fonts
+Icons: Font Awesome
