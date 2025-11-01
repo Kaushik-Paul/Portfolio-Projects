@@ -4,6 +4,7 @@
 /career-conversation /redirects/career-conversation.html 302
 /ai-agentic-coder /redirects/ai-coder.html 302
 /stock-market-agent /redirects/stock-market-agent.html 302
+/healthcare /redirects/healthcare-saas.html 302
 
 # Redirect /redirect/* to /*
 /redirect/*  /:splat  302
