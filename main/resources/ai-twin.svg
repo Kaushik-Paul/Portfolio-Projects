@@ -3,11 +3,26 @@
     <title>AI Digital Twin</title>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect fill="#4F46E5" x="0" y="0" width="24" height="24" rx="4"></rect>
-        <g transform="translate(3.000000, 3.000000)" fill="#FFFFFF">
-            <path d="M9,0 C4.02943725,0 0,4.02943725 0,9 C0,13.9705627 4.02943725,18 9,18 C13.9705627,18 18,13.9705627 18,9 C18,4.02943725 13.9705627,0 9,0 Z M9,16.2 C5.1411602,16.2 1.8,12.8588398 1.8,9 C1.8,5.1411602 5.1411602,1.8 9,1.8 C12.8588398,1.8 16.2,5.1411602 16.2,9 C16.2,12.8588398 12.8588398,16.2 9,16.2 Z"></path>
-            <path d="M9,3.6 C6.1862905,3.6 3.6,6.1862905 3.6,9 C3.6,11.8137095 6.1862905,14.4 9,14.4 C11.8137095,14.4 14.4,11.8137095 14.4,9 C14.4,6.1862905 11.8137095,3.6 9,3.6 Z M9,12.6 C7.0066605,12.6 5.4,10.9933395 5.4,9 C5.4,7.0066605 7.0066605,5.4 9,5.4 C10.9933395,5.4 12.6,7.0066605 12.6,9 C12.6,10.9933395 10.9933395,12.6 9,12.6 Z"></path>
-            <path d="M9,7.2 C8.172,7.2 7.2,8.172 7.2,9 C7.2,9.828 8.172,10.8 9,10.8 C9.828,10.8 10.8,9.828 10.8,9 C10.8,8.172 9.828,7.2 9,7.2 Z"></path>
-            <path d="M12.6,5.4 C12.6,4.62680135 13.2268014,4 14,4 C14.7731986,4 15.4,4.62680135 15.4,5.4 C15.4,6.17319865 14.7731986,6.8 14,6.8 C13.2268014,6.8 12.6,6.17319865 12.6,5.4 Z"></path>
+        <g transform="translate(2.000000, 2.000000)" fill="#FFFFFF">
+            <!-- Left figure (human) -->
+            <circle cx="5" cy="4.5" r="2.5"></circle>
+            <rect x="4" y="7" width="2" height="5" rx="1"></rect>
+            <path d="M3,13 L7,13 C7,15.209 6.104,17 5,17 C3.896,17 3,15.209 3,13 Z"></path>
+            <path d="M2,12 L8,12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"></path>
+            
+            <!-- Right figure (digital twin) -->
+            <circle cx="15" cy="4.5" r="2.5"></circle>
+            <rect x="14" y="7" width="2" height="5" rx="1"></rect>
+            <path d="M13,13 L17,13 C17,15.209 16.104,17 15,17 C13.896,17 13,15.209 13,13 Z"></path>
+            <path d="M12,12 L18,12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2,1"></path>
+            
+            <!-- Connection between figures -->
+            <path d="M7.5,10 L12.5,10" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="1,1"></path>
+            <circle cx="10" cy="10" r="1" fill="#FFFFFF"></circle>
+            
+            <!-- AI elements -->
+            <circle cx="10" cy="17" r="1" fill="#4F46E5" stroke="#FFFFFF" stroke-width="1"></circle>
+            <path d="M9,16 L11,16 L10,18 Z" fill="#FFFFFF"></path>
         </g>
     </g>
 </svg>
