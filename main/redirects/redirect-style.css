@@ -209,3 +209,11 @@ p {
 .cyber-security .loader-bar {
     background: var(--dark);
 }
+
+.alex-agent .logo {
+    color: var(--warning);
+}
+
+.alex-agent .loader-bar {
+    background: var(--warning);
+}
