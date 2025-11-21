@@ -35,7 +35,7 @@ Check out the live website: [https://projects.kaushikpaul.co.in/](https://projec
 1. **Alex Agent**
    - Multi-agent AI financial advisor for portfolio analysis and retirement planning
    - Built with a serverless AWS backend and Next.js frontend
-   - Live at http://projects.kaushikpaul.co.in/alex-agent
+   - Live at http://projects.kaushikpaul.co.in/alex
 
 2. **Cyber-Security Agent**
    - LLM-first AI security agent for Python code

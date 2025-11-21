@@ -211,9 +211,9 @@ p {
 }
 
 .alex-agent .logo {
-    color: var(--warning);
+    color: #22c55e;
 }
 
 .alex-agent .loader-bar {
-    background: var(--warning);
+    background: #22c55e;
 }
