@@ -31,6 +31,34 @@
         <priority>0.8</priority>
     </url>
     
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/alex-agent.html</loc>
+        <lastmod>2025-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/ai-twin.html</loc>
+        <lastmod>2025-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/cyber-security-agent.html</loc>
+        <lastmod>2025-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/healthcare-saas.html</loc>
+        <lastmod>2025-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Stock Market Agent Project -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/redirects/stock-market-agent.html</loc>
