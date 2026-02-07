@@ -32,45 +32,49 @@ Check out the live website: [https://projects.kaushikpaul.co.in/](https://projec
 
 ## 🚀 Projects Showcased
 
-1. **Alex Agent**
+1. **Price is Right - AI Deal Assistant**
+   - AI-powered contract and deal assistant that helps craft, refine, and review negotiation language through an intuitive interface
+   - Live at http://projects.kaushikpaul.co.in/price-is-right
+
+2. **Alex Agent**
    - Multi-agent AI financial advisor for portfolio analysis and retirement planning
    - Built with a serverless AWS backend and Next.js frontend
    - Live at http://projects.kaushikpaul.co.in/alex
 
-2. **Cyber-Security Agent**
+3. **Cyber-Security Agent**
    - LLM-first AI security agent for Python code
    - Combines Semgrep static analysis via MCP with LLM reasoning to produce structured vulnerability reports
    - Production-ready deployment on Google Cloud Run at http://projects.kaushikpaul.co.in/cyber-security-agent
 
-3. **Healthcare Consultation Assistant (SaaS)**
+4. **Healthcare Consultation Assistant (SaaS)**
    - AI-powered SaaS for healthcare professionals
    - Transforms consultation notes into visit summaries and patient-friendly emails
    - Built with Next.js and secure authentication
 
-4. **AI Digital Twin - Personalized AI Assistant**
+5. **AI Digital Twin - Personalized AI Assistant**
    - Creates a digital twin that learns from your interactions
    - Responds in your unique style using advanced AI
    - Built with cutting-edge AI technologies
 
-5. **Stock Market Portfolio Manager**
+6. **Stock Market Portfolio Manager**
    - AI-powered portfolio management tool
    - Analyzes market trends and executes automated trades
 
-6. **Auto AI Agents Creator**
+7. **Auto AI Agents Creator**
    - AI agents that collaborate to generate and refine ideas
    - Built with Microsoft Autogen
 
-7. **Stock Picker**
+8. **Stock Picker**
    - AI-powered stock analysis tool
    - Identifies trending companies and provides investment insights
 
-8. **AI Agentic Coder**
+9. **AI Agentic Coder**
    - Multi-agent AI that transforms ideas into production-ready apps
    - Handles coding, testing, and deployment
 
-9. **Career Conversation**
-   - AI assistant for professional profiles
-   - Provides career insights and answers experience-related questions
+10. **Career Conversation**
+    - AI assistant for professional profiles
+    - Provides career insights and answers experience-related questions
 
 ## 🔧 Setup & Deployment
 
