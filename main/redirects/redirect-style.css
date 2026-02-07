@@ -217,3 +217,10 @@ p {
 .alex-agent .loader-bar {
     background: #22c55e;
 }
+.price-is-right .logo {
+    color: var(--warning);
+}
+
+.price-is-right .loader-bar {
+    background: var(--warning);
+}
