@@ -8,6 +8,7 @@
 /ai-chat /redirects/ai-twin.html 302
 /cyber-security-agent /redirects/cyber-security-agent.html 302
 /alex /redirects/alex-agent.html 302
+/price-is-right /redirects/price-is-right.html 302
 
 # Redirect /redirect/* to /*
 /redirect/*  /:splat  302
