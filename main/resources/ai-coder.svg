@@ -1,5 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="16 18 22 12 16 6"></polyline>
-    <polyline points="8 6 2 12 8 18"></polyline>
-    <line x1="12" y1="2" x2="12" y2="22"></line>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="coder-bg" x1="20" y1="18" x2="140" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7ECFF"/>
+      <stop offset="1" stop-color="#E8D0FF"/>
+    </linearGradient>
+    <linearGradient id="coder-shell" x1="34" y1="32" x2="126" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#312E81"/>
+      <stop offset="1" stop-color="#581C87"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#coder-bg)"/>
+  <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#C4B5FD" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#coder-shell)"/>
+  <rect x="34" y="32" width="92" height="16" rx="22" fill="#4C2FB1"/>
+  <circle cx="46" cy="40" r="2.5" fill="#FB7185"/>
+  <circle cx="54" cy="40" r="2.5" fill="#FBBF24"/>
+  <circle cx="62" cy="40" r="2.5" fill="#4ADE80"/>
+  <rect x="48" y="56" width="28" height="54" rx="14" fill="#251D63"/>
+  <rect x="82" y="56" width="30" height="54" rx="14" fill="#FFFFFF" opacity="0.12"/>
+  <path d="m60 67-8 11 8 11" stroke="#DDD6FE" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m64 63 8 15-8 15" stroke="#A78BFA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M94 72h9" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 84h14" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <path d="M88 96h18" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <rect x="48" y="116" width="58" height="7" rx="3.5" fill="#DDD6FE" opacity="0.18"/>
 </svg>

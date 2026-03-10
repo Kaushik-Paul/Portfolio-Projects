@@ -1,8 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-    <path d="M2 17l10 5 10-5"></path>
-    <path d="M2 12l10 5 10-5"></path>
-    <path d="M12 2v20"></path>
-    <path d="M2 7v10"></path>
-    <path d="M22 7v10"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="picker-bg" x1="20" y1="18" x2="140" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8FFE8"/>
+      <stop offset="1" stop-color="#BDF0C7"/>
+    </linearGradient>
+    <linearGradient id="picker-shell" x1="34" y1="32" x2="126" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14532D"/>
+      <stop offset="1" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#picker-bg)"/>
+  <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#86EFAC" stroke-opacity="0.45" stroke-width="1.5"/>
+  <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#picker-shell)"/>
+  <rect x="34" y="32" width="92" height="16" rx="22" fill="#1C7A3F"/>
+  <circle cx="46" cy="40" r="2.5" fill="#FB7185"/>
+  <circle cx="54" cy="40" r="2.5" fill="#FBBF24"/>
+  <circle cx="62" cy="40" r="2.5" fill="#4ADE80"/>
+  <rect x="48" y="56" width="34" height="12" rx="6" fill="#FFFFFF" opacity="0.12"/>
+  <path d="m50 96 14-14 10 8 23-22" stroke="#86EFAC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="98" cy="72" r="12" fill="#FFFFFF"/>
+  <path d="m98 65 2.2 4.7 5.1.6-3.8 3.6 1 5.1-4.5-2.5-4.5 2.5 1-5.1-3.8-3.6 5.1-.6L98 65Z" fill="#16A34A"/>
+  <rect x="50" y="108" width="54" height="7" rx="3.5" fill="#BBF7D0" opacity="0.2"/>
 </svg>

@@ -482,11 +482,11 @@ html[data-theme='dark'] .theme-switcher {
 }
 
 .project-image {
-    height: 220px;
+    height: 244px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.75rem;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -507,8 +507,8 @@ html[data-theme='dark'] .theme-switcher {
 }
 
 .project-svg {
-    width: 116px;
-    height: 116px;
+    width: 136px;
+    height: 136px;
     transition: transform 0.3s ease;
 }
 
@@ -998,12 +998,12 @@ footer p {
     }
 
     .project-image {
-        height: 200px;
+        height: 224px;
     }
 
     .project-svg {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .about-text,
