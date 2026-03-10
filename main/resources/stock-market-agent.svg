@@ -1,9 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="200" rx="20" fill="#E3F2FD"/>
-  <path d="M50 150V80H70V150H50Z" fill="#2196F3"/>
-  <path d="M90 150V100H110V150H90Z" fill="#2196F3"/>
-  <path d="M130 150V60H150V150H130Z" fill="#2196F3"/>
-  <path d="M40 90L65 60L85 80L120 40" stroke="#0D47A1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M40 150H160" stroke="#0D47A1" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="market-bg" x1="20" y1="18" x2="140" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5F0FF"/>
+      <stop offset="1" stop-color="#BFD8FF"/>
+    </linearGradient>
+    <linearGradient id="market-shell" x1="34" y1="32" x2="126" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#market-bg)"/>
+  <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#93C5FD" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#market-shell)"/>
+  <rect x="34" y="32" width="92" height="16" rx="22" fill="#2948D1"/>
+  <circle cx="46" cy="40" r="2.5" fill="#FB7185"/>
+  <circle cx="54" cy="40" r="2.5" fill="#FBBF24"/>
+  <circle cx="62" cy="40" r="2.5" fill="#4ADE80"/>
+  <path d="M52 98V76" stroke="#7DD3FC" stroke-width="8" stroke-linecap="round"/>
+  <path d="M74 98V64" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M96 98V54" stroke="#0EA5E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="m50 74 18-14 12 10 24-24" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="57" r="6" fill="#FFFFFF"/>
+  <path d="M104 53v8M100 57h8" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <rect x="52" y="108" width="52" height="7" rx="3.5" fill="#93C5FD" opacity="0.18"/>
 </svg>
