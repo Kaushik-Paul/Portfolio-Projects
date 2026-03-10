@@ -9,6 +9,27 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/resources/rocket-blue.svg">
     
+    <script>
+        (function () {
+            var storageKey = 'kp-theme-preference';
+            var root = document.documentElement;
+            var source = 'system';
+
+            try {
+                var storedPreference = window.localStorage.getItem(storageKey);
+                if (storedPreference === 'light' || storedPreference === 'dark' || storedPreference === 'system') {
+                    source = storedPreference;
+                }
+            } catch (error) {
+                source = 'system';
+            }
+
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            root.dataset.themeSource = source;
+            root.dataset.theme = source === 'system' ? (prefersDark ? 'dark' : 'light') : source;
+        })();
+    </script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -39,6 +60,7 @@
         </div>
     </main>
     
+    <script src="/theme.js" defer></script>
     <script src="/app.js" defer></script>
 </body>
 </html>
