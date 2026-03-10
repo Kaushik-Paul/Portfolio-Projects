@@ -3,12 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/svg+xml" href="../resources/rocket-blue.svg">
     <title>Redirecting to Career Conversation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <script>
+        (function () {
+            var storageKey = 'kp-theme-preference';
+            var root = document.documentElement;
+            var source = 'system';
+
+            try {
+                var storedPreference = window.localStorage.getItem(storageKey);
+                if (storedPreference === 'light' || storedPreference === 'dark' || storedPreference === 'system') {
+                    source = storedPreference;
+                }
+            } catch (error) {
+                source = 'system';
+            }
+
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            root.dataset.themeSource = source;
+            root.dataset.theme = source === 'system' ? (prefersDark ? 'dark' : 'light') : source;
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="redirect-style.css">
     <script>
         setTimeout(function () {
@@ -18,27 +40,44 @@
 </head>
 
 <body class="career-conversation">
-    <div class="container">
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-            <line x1="12" y1="9" x2="12" y2="13"></line>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-        </svg>
-
-        <h1>Career Conversation</h1>
-        <p>AI assistant for professional profiles, providing career insights and answering experience-related questions.
-        </p>
-
-        <div class="loader">
-            <div class="loader-bar"></div>
+    <div class="redirect-shell">
+        <div class="redirect-topbar">
+            <a href="../index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to projects</a>
+            <div class="theme-switcher" role="group" aria-label="Theme selector">
+                <button type="button" class="theme-toggle" data-theme-option="light" aria-label="Use light theme" title="Light theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button type="button" class="theme-toggle" data-theme-option="dark" aria-label="Use dark theme" title="Dark theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button type="button" class="theme-toggle" data-theme-option="system" aria-label="Use system theme" title="System theme">
+                    <i class="fas fa-desktop"></i>
+                </button>
+            </div>
         </div>
 
-        <img src="../resources/career-conversation.svg" alt="Career Conversation" class="project-svg">
+        <div class="container">
+            <span class="redirect-badge">Launching live project</span>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <h1>Career Conversation</h1>
+            <p>AI assistant for professional profiles, providing career insights and answering experience-related questions.</p>
 
-        <p class="redirect-info">If you are not redirected automatically, <a
-                href="https://huggingface.co/spaces/kaushikpaul/Career-Conversation">click here</a> to continue.</p>
+            <div class="loader">
+                <div class="loader-bar"></div>
+            </div>
+
+            <img src="../resources/career-conversation.svg" alt="Career Conversation" class="project-svg">
+
+            <div class="redirect-actions">
+                <a class="redirect-button primary" href="https://huggingface.co/spaces/kaushikpaul/Career-Conversation">Open now</a>
+                <a class="redirect-button secondary" href="../index.html#projects">Back to projects</a>
+            </div>
+
+            <p class="redirect-info">You will be redirected automatically in a few seconds. If not, <a href="https://huggingface.co/spaces/kaushikpaul/Career-Conversation">click here</a>.</p>
+        </div>
     </div>
+
+    <script src="../theme.js"></script>
 </body>
 
 </html>
