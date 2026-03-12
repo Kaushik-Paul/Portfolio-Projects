@@ -44,6 +44,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/manga-ocr.html</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
     <url>
         <loc>https://projects.kaushikpaul.co.in/redirects/cyber-security-agent.html</loc>
