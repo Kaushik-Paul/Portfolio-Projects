@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="manga-bg" x1="20" y1="18" x2="140" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1E8"/>
+      <stop offset="1" stop-color="#FFD1B1"/>
+    </linearGradient>
+    <linearGradient id="manga-shell" x1="34" y1="32" x2="126" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B2434"/>
+      <stop offset="1" stop-color="#101826"/>
+    </linearGradient>
+    <linearGradient id="manga-accent" x1="84" y1="60" x2="113" y2="103" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB923C"/>
+      <stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#manga-bg)"/>
+  <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#F9A971" stroke-opacity="0.42" stroke-width="1.5"/>
+  <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#manga-shell)"/>
+  <rect x="34" y="32" width="92" height="16" rx="22" fill="#263247"/>
+  <circle cx="46" cy="40" r="2.5" fill="#FB7185"/>
+  <circle cx="54" cy="40" r="2.5" fill="#FBBF24"/>
+  <circle cx="62" cy="40" r="2.5" fill="#4ADE80"/>
+  <rect x="46" y="56" width="28" height="54" rx="12" fill="#F8FAFC"/>
+  <rect x="50" y="62" width="9" height="18" rx="4.5" fill="#CBD5E1"/>
+  <rect x="61" y="62" width="9" height="10" rx="4.5" fill="#E2E8F0"/>
+  <rect x="50" y="84" width="20" height="4" rx="2" fill="#94A3B8"/>
+  <rect x="50" y="92" width="16" height="4" rx="2" fill="#CBD5E1"/>
+  <rect x="82" y="58" width="32" height="34" rx="14" fill="url(#manga-accent)"/>
+  <path d="M90 70h16M90 77h12" stroke="#FFF7ED" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 92l5 8-1-8" fill="#FB923C"/>
+  <rect x="82" y="100" width="28" height="10" rx="5" fill="#1E293B" stroke="#FB923C" stroke-width="2"/>
+  <path d="M90 105h11" stroke="#FDBA74" stroke-width="3" stroke-linecap="round"/>
+  <path d="M116 60v42" stroke="#475569" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M78 56v54" stroke="#475569" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>
