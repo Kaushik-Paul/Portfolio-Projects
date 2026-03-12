@@ -76,6 +76,9 @@
         }
     }
 
+    // Apply the theme as soon as the script loads to keep page paint consistent.
+    applyTheme(getStoredPreference(), false);
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', bindButtons, { once: true });
     } else {
