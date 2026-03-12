@@ -153,26 +153,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script>
-        (function () {
-            var storageKey = 'kp-theme-preference';
-            var root = document.documentElement;
-            var source = 'system';
-
-            try {
-                var storedPreference = window.localStorage.getItem(storageKey);
-                if (storedPreference === 'light' || storedPreference === 'dark' || storedPreference === 'system') {
-                    source = storedPreference;
-                }
-            } catch (error) {
-                source = 'system';
-            }
-
-            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            root.dataset.themeSource = source;
-            root.dataset.theme = source === 'system' ? (prefersDark ? 'dark' : 'light') : source;
-        })();
-    </script>
+    <script src="theme.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -588,7 +569,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="theme.js"></script>
     <script src="app.js"></script>
 </body>
 

@@ -7,36 +7,12 @@
     <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/svg+xml" href="../resources/rocket-blue.svg">
     <title>Redirecting to Career Conversation</title>
-    <script>
-        (function () {
-            var storageKey = 'kp-theme-preference';
-            var root = document.documentElement;
-            var source = 'system';
-
-            try {
-                var storedPreference = window.localStorage.getItem(storageKey);
-                if (storedPreference === 'light' || storedPreference === 'dark' || storedPreference === 'system') {
-                    source = storedPreference;
-                }
-            } catch (error) {
-                source = 'system';
-            }
-
-            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            root.dataset.themeSource = source;
-            root.dataset.theme = source === 'system' ? (prefersDark ? 'dark' : 'light') : source;
-        })();
-    </script>
+    <script src="../theme.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="redirect-style.css">
-    <script>
-        setTimeout(function () {
-            window.location.href = 'https://huggingface.co/spaces/kaushikpaul/Career-Conversation';
-        }, 3000);
-    </script>
 </head>
 
 <body class="career-conversation">
@@ -77,7 +53,7 @@
         </div>
     </div>
 
-    <script src="../theme.js"></script>
+    <script src="redirect-page.js"></script>
 </body>
 
 </html>
