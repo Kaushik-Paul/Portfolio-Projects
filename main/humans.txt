@@ -7,11 +7,11 @@ GitHub: https://github.com/Kaushik-Paul
 LinkedIn: https://www.linkedin.com/in/kaushik-paul-767590215
 
 /* SITE */
-Last update: 2025/10/10
+Last update: 2026/05/09
 Standards: HTML5, CSS3, JavaScript
-Components: AI Agents, Stock Market Tools, Fullstack Applications
-Software: Python, Django, Java, Spring Boot, CrewAI, LangGraph, Microsoft Autogen
-Keywords: Kaushik Paul, AI Developer, Fullstack Developer, AI Agents, Python Developer, Django Developer, Stock Market Agent, Machine Learning, Agentic AI
+Components: AI Agents, Job Intelligence, Stock Market Tools, Fullstack Applications
+Software: Python, Django, Java, Spring Boot, AWS, CrewAI, LangGraph, Microsoft Autogen
+Keywords: Kaushik Paul, SDE 2, Instahyre, AI Developer, Fullstack Developer, AI Agents, Python Developer, Django Developer, Stock Market Agent, Machine Learning, Agentic AI
 
 /* THANKS */
 Font: Poppins from Google Fonts

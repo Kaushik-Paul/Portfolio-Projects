@@ -5,12 +5,12 @@
     <!-- Main Page -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/</loc>
-        <lastmod>2025-10-10</lastmod>
+        <lastmod>2026-05-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://storage.googleapis.com/kaushik-resources/kaushik-website-logo.jpg</image:loc>
-            <image:title>Kaushik Paul - Fullstack &amp; AI Developer</image:title>
+            <image:title>Kaushik Paul - SDE 2, Fullstack &amp; AI Developer</image:title>
             <image:caption>Kaushik Paul Projects Portfolio</image:caption>
         </image:image>
     </url>
@@ -18,7 +18,7 @@
     <!-- Projects Section -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/#projects</loc>
-        <lastmod>2025-10-10</lastmod>
+        <lastmod>2026-05-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -26,7 +26,7 @@
     <!-- About Section -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/#about</loc>
-        <lastmod>2025-10-10</lastmod>
+        <lastmod>2026-05-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
