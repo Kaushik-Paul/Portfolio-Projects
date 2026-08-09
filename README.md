@@ -61,6 +61,21 @@ Check out the live website: [https://projects.kaushikpaul.co.in/](https://projec
    - Hosted demo: https://huggingface.co/spaces/kaushikpaul/Manga-Translator-OCR
    - Live at https://projects.kaushikpaul.co.in/manga-ocr
 
+1. **JanitorAI Voice Studio**
+   - Tampermonkey userscript that adds text-to-speech controls to JanitorAI chats
+   - Powered by the Kokoro-82M model on Hugging Face Spaces with free CPU and ZeroGPU backends, plus BYOK support for OpenRouter and Mimo
+   - Live at https://projects.kaushikpaul.co.in/janitorai-voice-studio
+
+1. **HF Drive - Hugging Face File Manager**
+   - Drive-style web file manager for a Hugging Face Storage Bucket
+   - Streaming uploads, media previews, search, trash with auto-cleanup, and password-protected login, hosted as a Docker Space
+   - Live at https://projects.kaushikpaul.co.in/hf-drive
+
+1. **YT-DLP Video Downloader**
+   - Self-hosted media link generator and downloader powered by yt-dlp
+   - Extracts instant source links or stores downloads in a Hugging Face bucket with signed 30-day streaming links
+   - Live at https://projects.kaushikpaul.co.in/video-downloader
+
 1. **Stock Market Portfolio Manager**
    - AI-powered portfolio management tool
    - Analyzes market trends and executes automated trades
