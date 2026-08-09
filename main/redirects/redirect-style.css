@@ -351,6 +351,18 @@ p {
     --project-accent: #f97316;
 }
 
+.janitorai-voice-studio {
+    --project-accent: #7c3aed;
+}
+
+.hf-drive {
+    --project-accent: #d97706;
+}
+
+.video-downloader {
+    --project-accent: #dc2626;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
