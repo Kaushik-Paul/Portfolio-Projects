@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+    <defs>
+        <linearGradient id="video-bg" x1="20" y1="18" x2="140" y2="142"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFE4E6" />
+            <stop offset="1" stop-color="#FECDD3" />
+        </linearGradient>
+        <linearGradient id="video-shell" x1="34" y1="32" x2="126" y2="128"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1B2434" />
+            <stop offset="1" stop-color="#101826" />
+        </linearGradient>
+        <linearGradient id="video-accent" x1="48" y1="58" x2="112" y2="98"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F87171" />
+            <stop offset="1" stop-color="#DC2626" />
+        </linearGradient>
+    </defs>
+    <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#video-bg)" />
+    <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#FDA4AF"
+        stroke-opacity="0.5" stroke-width="1.5" />
+    <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#video-shell)" />
+    <rect x="34" y="32" width="92" height="16" rx="22" fill="#263247" />
+    <circle cx="46" cy="40" r="2.5" fill="#FB7185" />
+    <circle cx="54" cy="40" r="2.5" fill="#FBBF24" />
+    <circle cx="62" cy="40" r="2.5" fill="#4ADE80" />
+    <rect x="48" y="58" width="64" height="40" rx="10" fill="url(#video-accent)" />
+    <path d="M74 69l20 9-20 9z" fill="#FFF1F2" />
+    <path d="M80 104v10M74 108l6 6 6-6" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    <path d="M64 121h32" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round" />
+</svg>
