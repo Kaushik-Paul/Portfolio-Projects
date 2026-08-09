@@ -5,7 +5,7 @@
     <!-- Main Page -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/</loc>
-        <lastmod>2026-05-09</lastmod>
+        <lastmod>2026-08-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -48,6 +48,30 @@
     <url>
         <loc>https://projects.kaushikpaul.co.in/redirects/manga-ocr.html</loc>
         <lastmod>2026-03-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- JanitorAI Voice Studio Project -->
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/janitorai-voice-studio.html</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- HF Drive Project -->
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/hf-drive.html</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- YT-DLP Video Downloader Project -->
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/video-downloader.html</loc>
+        <lastmod>2026-08-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
