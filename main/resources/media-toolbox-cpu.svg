@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+    <defs>
+        <linearGradient id="mtcpu-bg" x1="20" y1="18" x2="140" y2="142"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E7FF" />
+            <stop offset="1" stop-color="#C7D2FE" />
+        </linearGradient>
+        <linearGradient id="mtcpu-shell" x1="34" y1="32" x2="126" y2="128"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1B2434" />
+            <stop offset="1" stop-color="#101826" />
+        </linearGradient>
+        <linearGradient id="mtcpu-accent" x1="48" y1="58" x2="112" y2="94"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#818CF8" />
+            <stop offset="1" stop-color="#4F46E5" />
+        </linearGradient>
+    </defs>
+    <rect x="20" y="18" width="120" height="124" rx="30" fill="url(#mtcpu-bg)" />
+    <rect x="20.75" y="18.75" width="118.5" height="122.5" rx="29.25" stroke="#A5B4FC"
+        stroke-opacity="0.5" stroke-width="1.5" />
+    <rect x="34" y="32" width="92" height="96" rx="22" fill="url(#mtcpu-shell)" />
+    <rect x="34" y="32" width="92" height="16" rx="22" fill="#263247" />
+    <circle cx="46" cy="40" r="2.5" fill="#FB7185" />
+    <circle cx="54" cy="40" r="2.5" fill="#FBBF24" />
+    <circle cx="62" cy="40" r="2.5" fill="#4ADE80" />
+    <rect x="48" y="58" width="64" height="36" rx="6" fill="url(#mtcpu-accent)" />
+    <rect x="54" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="64" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="74" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="84" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="94" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="104" y="62" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="54" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="64" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="74" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="84" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="94" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <rect x="104" y="85" width="5" height="5" rx="1.5" fill="#E0E7FF" />
+    <path d="M75 70l12 6-12 6z" fill="#EEF2FF" />
+    <rect x="48" y="106" width="64" height="6" rx="3" fill="#475569" />
+    <rect x="48" y="106" width="26" height="6" rx="3" fill="#818CF8" />
+    <path d="M74 101v16" stroke="#C7D2FE" stroke-width="3" stroke-linecap="round" />
+    <rect x="48" y="120" width="40" height="4" rx="2" fill="#334155" />
+</svg>

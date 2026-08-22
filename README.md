@@ -66,6 +66,16 @@ Check out the live website: [https://projects.kaushikpaul.co.in/](https://projec
    - Powered by the Kokoro-82M model on Hugging Face Spaces with free CPU and ZeroGPU backends, plus BYOK support for OpenRouter and Mimo
    - Live at https://projects.kaushikpaul.co.in/janitorai-voice-studio
 
+1. **Media Toolbox GPU - AI Media Toolkit**
+   - GPU-accelerated Media Toolbox on Hugging Face ZeroGPU with Whisper large-v3-turbo transcription, Demucs stem separation, and Real-ESRGAN AI upscaling on top of every FFmpeg tool
+   - Shares one private Hugging Face Storage Bucket and job history with the CPU app
+   - Live at https://projects.kaushikpaul.co.in/media-toolbox-gpu
+
+1. **Media Toolbox CPU - FFmpeg Media Toolkit**
+   - Browser-based FFmpeg toolkit hosted as a public Hugging Face Docker Space for compressing, trimming, converting, merging, and subtitle editing
+   - URL fetching, job history, and 24-hour result storage in a private bucket
+   - Live at https://projects.kaushikpaul.co.in/media-toolbox-cpu
+
 1. **HF Drive - Hugging Face File Manager**
    - Drive-style web file manager for a Hugging Face Storage Bucket
    - Streaming uploads, media previews, search, trash with auto-cleanup, and password-protected login, hosted as a Docker Space

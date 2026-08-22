@@ -7,7 +7,7 @@ GitHub: https://github.com/Kaushik-Paul
 LinkedIn: https://www.linkedin.com/in/kaushik-paul-767590215
 
 /* SITE */
-Last update: 2026/08/09
+Last update: 2026/08/22
 Standards: HTML5, CSS3, JavaScript
 Components: AI Agents, Job Intelligence, Stock Market Tools, Fullstack Applications
 Software: Python, Django, Java, Spring Boot, AWS, CrewAI, LangGraph, Microsoft Autogen

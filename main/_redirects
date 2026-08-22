@@ -8,6 +8,8 @@
 /ai-chat /redirects/ai-twin.html 302
 /manga-ocr /redirects/manga-ocr.html 302
 /janitorai-voice-studio /redirects/janitorai-voice-studio.html 302
+/media-toolbox-gpu /redirects/media-toolbox-gpu.html 302
+/media-toolbox-cpu /redirects/media-toolbox-cpu.html 302
 /hf-drive /redirects/hf-drive.html 302
 /video-downloader /redirects/video-downloader.html 302
 /cyber-security-agent /redirects/cyber-security-agent.html 302
