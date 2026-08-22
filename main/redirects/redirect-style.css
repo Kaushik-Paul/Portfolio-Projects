@@ -355,6 +355,14 @@ p {
     --project-accent: #7c3aed;
 }
 
+.media-toolbox-gpu {
+    --project-accent: #059669;
+}
+
+.media-toolbox-cpu {
+    --project-accent: #4f46e5;
+}
+
 .hf-drive {
     --project-accent: #d97706;
 }

@@ -5,7 +5,7 @@
     <!-- Main Page -->
     <url>
         <loc>https://projects.kaushikpaul.co.in/</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -56,6 +56,22 @@
     <url>
         <loc>https://projects.kaushikpaul.co.in/redirects/janitorai-voice-studio.html</loc>
         <lastmod>2026-08-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Media Toolbox GPU Project -->
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/media-toolbox-gpu.html</loc>
+        <lastmod>2026-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Media Toolbox CPU Project -->
+    <url>
+        <loc>https://projects.kaushikpaul.co.in/redirects/media-toolbox-cpu.html</loc>
+        <lastmod>2026-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
