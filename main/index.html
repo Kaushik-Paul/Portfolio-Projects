@@ -3,7 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- Theme bootstrap: must stay inline and first so the first paint uses the saved theme. -->
+    <script>
+        (function () {
+            var source = 'system';
+            try {
+                var stored = window.localStorage.getItem('kp-theme-preference');
+                if (stored === 'light' || stored === 'dark') {
+                    source = stored;
+                }
+            } catch (error) {
+                // Ignore storage errors.
+            }
+            var theme = source === 'system'
+                ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+                : source;
+            var root = document.documentElement;
+            root.dataset.themeSource = source;
+            root.dataset.theme = theme;
+            root.style.colorScheme = theme;
+        })();
+    </script>
+    <style>
+        html { background: #f5f8ff; }
+        html[data-theme='dark'] { background: #070d19; }
+    </style>
     <title>Kaushik Paul Projects | SDE 2, Fullstack & AI Developer Portfolio</title>
 
     <!-- Primary Meta Tags -->
@@ -153,10 +179,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="theme.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js" defer></script>
     <link type="text/plain" rel="author" href="humans.txt">
 </head>
 
@@ -197,28 +223,52 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <span class="hero-badge">SDE 2 at Instahyre | Production-ready AI, fullstack apps, and intelligent automation</span>
-                <h1>Hi, I'm <span class="highlight">Kaushik Paul</span></h1>
-                <h2>SDE 2, Fullstack and AI Agents Developer</h2>
-                <p>Explore Kaushik Paul's projects portfolio featuring AI agents, job-intelligence systems, stock market
-                    tools, and intelligent automation solutions. Specializing in Python, Django, AWS, CrewAI, LangGraph,
-                    and production-ready AI applications.</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="cta-button">View My Projects</a>
-                    <a href="https://www.kaushikpaul.co.in/" target="_blank" rel="noopener noreferrer"
-                        class="secondary-button">Visit Main Site <i class="fas fa-external-link-alt"></i></a>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="hero-badge"><span class="status-dot" aria-hidden="true"></span>SDE 2 at Instahyre | Production-ready AI, fullstack apps, and intelligent automation</span>
+                    <h1>Hi, I'm <span class="highlight">Kaushik Paul</span></h1>
+                    <h2>SDE 2, Fullstack and AI Agents Developer</h2>
+                    <p>Explore Kaushik Paul's projects portfolio featuring AI agents, job-intelligence systems, stock market
+                        tools, and intelligent automation solutions. Specializing in Python, Django, AWS, CrewAI, LangGraph,
+                        and production-ready AI applications.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="cta-button">View My Projects <i class="fas fa-arrow-down"></i></a>
+                        <a href="https://www.kaushikpaul.co.in/" target="_blank" rel="noopener noreferrer"
+                            class="secondary-button">Visit Main Site <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
-                <div class="hero-highlights">
-                    <div class="hero-highlight">
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orbit orbit-outer"></div>
+                    <div class="orbit orbit-inner"></div>
+                    <div class="hero-core">
+                        <span class="hero-core-count" data-project-count>16</span>
+                        <span class="hero-core-label">Live projects</span>
+                    </div>
+                    <img src="resources/alex-agent.svg" alt="" class="hero-tile tile-1">
+                    <img src="resources/manga-ocr.svg" alt="" class="hero-tile tile-2">
+                    <img src="resources/ai-twin.svg" alt="" class="hero-tile tile-3">
+                    <img src="resources/media-toolbox-gpu.svg" alt="" class="hero-tile tile-4">
+                    <img src="resources/price-is-right.svg" alt="" class="hero-tile tile-5">
+                </div>
+            </div>
+            <div class="hero-highlights">
+                <div class="hero-highlight">
+                    <i class="fas fa-rocket"></i>
+                    <div>
                         <strong>SDE 2 Impact</strong>
                         <span>Leading AI job creation and recommendation work at Instahyre</span>
                     </div>
-                    <div class="hero-highlight">
+                </div>
+                <div class="hero-highlight">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
                         <strong>Product Metrics</strong>
                         <span>65% faster job creation and 45% stronger candidate relevancy</span>
                     </div>
-                    <div class="hero-highlight">
+                </div>
+                <div class="hero-highlight">
+                    <i class="fas fa-users"></i>
+                    <div>
                         <strong>Technical Leadership</strong>
                         <span>Guiding developers across design, delivery, and code reviews</span>
                     </div>
@@ -227,9 +277,14 @@
         </section>
 
         <section id="projects" class="projects">
-            <h2 class="section-title">Kaushik Paul's Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Portfolio</span>
+                <h2 class="section-title">Kaushik Paul's Featured Projects</h2>
+                <p class="section-subtitle">AI agents, media tools, and fullstack apps running live. Pick a card to
+                    launch the hosted project.</p>
+            </div>
             <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up">
+                <div class="project-card" style="--card-accent: #f59e0b;" data-aos="fade-up">
                     <div class="project-image">
                         <img src="resources/price-is-right.svg" alt="Price is Right" class="project-svg">
                     </div>
@@ -243,7 +298,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card" style="--card-accent: #22c55e;" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
                         <img src="resources/alex-agent.svg" alt="Alex Agent" class="project-svg">
                     </div>
@@ -258,7 +313,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card" style="--card-accent: #6366f1;" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">
                         <img src="resources/ai-twin.svg" alt="AI Digital Twin" class="project-svg">
                     </div>
@@ -272,7 +327,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card" style="--card-accent: #f97316;" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">
                         <img src="resources/manga-ocr.svg" alt="Manga OCR" class="project-svg">
                     </div>
@@ -286,7 +341,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card" style="--card-accent: #7c3aed;" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-image">
                         <img src="resources/janitorai-voice-studio.svg" alt="JanitorAI Voice Studio" class="project-svg">
                     </div>
@@ -301,7 +356,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-card" style="--card-accent: #059669;" data-aos="fade-up" data-aos-delay="500">
                     <div class="project-image">
                         <img src="resources/media-toolbox-gpu.svg" alt="Media Toolbox GPU" class="project-svg">
                     </div>
@@ -316,7 +371,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-card" style="--card-accent: #4f46e5;" data-aos="fade-up" data-aos-delay="600">
                     <div class="project-image">
                         <img src="resources/media-toolbox-cpu.svg" alt="Media Toolbox CPU" class="project-svg">
                     </div>
@@ -331,7 +386,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-card" style="--card-accent: #d97706;" data-aos="fade-up" data-aos-delay="500">
                     <div class="project-image">
                         <img src="resources/hf-drive.svg" alt="HF Drive" class="project-svg">
                     </div>
@@ -346,7 +401,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-card" style="--card-accent: #dc2626;" data-aos="fade-up" data-aos-delay="600">
                     <div class="project-image">
                         <img src="resources/video-downloader.svg" alt="YT-DLP Video Downloader" class="project-svg">
                     </div>
@@ -361,7 +416,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card" style="--card-accent: #64748b;" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-image">
                         <img src="resources/cyber-security-agent.svg" alt="Cyber Security Agent" class="project-svg">
                     </div>
@@ -376,7 +431,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-card" style="--card-accent: #0ea5e9;" data-aos="fade-up" data-aos-delay="500">
                     <div class="project-image">
                         <img src="resources/healthcare-saas.svg" alt="Healthcare SaaS" class="project-svg">
                     </div>
@@ -391,7 +446,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-card" style="--card-accent: #06b6d4;" data-aos="fade-up" data-aos-delay="600">
                     <div class="project-image">
                         <img src="resources/stock-market-agent.svg" alt="Stock Market Agent" class="project-svg">
                     </div>
@@ -405,7 +460,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="project-card" style="--card-accent: #2563eb;" data-aos="fade-up" data-aos-delay="700">
                     <div class="project-image">
                         <img src="resources/ai-agents.svg" alt="AI Agents" class="project-svg">
                     </div>
@@ -419,7 +474,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="project-card" style="--card-accent: #10b981;" data-aos="fade-up" data-aos-delay="800">
                     <div class="project-image">
                         <img src="resources/stock-picker.svg" alt="Stock Picker" class="project-svg">
                     </div>
@@ -433,7 +488,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="900">
+                <div class="project-card" style="--card-accent: #8b5cf6;" data-aos="fade-up" data-aos-delay="900">
                     <div class="project-image">
                         <img src="resources/ai-coder.svg" alt="AI Coder" class="project-svg">
                     </div>
@@ -447,7 +502,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+                <div class="project-card" style="--card-accent: #ec4899;" data-aos="fade-up" data-aos-delay="1000">
                     <div class="project-image">
                         <img src="resources/career-conversation.svg" alt="Career Conversation" class="project-svg">
                     </div>
@@ -465,8 +520,11 @@
 
         <section id="about" class="about">
             <div class="about-content">
-                <h2 class="section-title">About Kaushik Paul</h2>
-                <div class="about-text" data-aos="fade-right">
+                <div class="section-header">
+                    <span class="section-eyebrow">About</span>
+                    <h2 class="section-title">About Kaushik Paul</h2>
+                </div>
+                <div class="about-text" data-aos="fade-up">
                     <p>I'm Kaushik Paul, an SDE 2 at Instahyre and a fullstack AI developer focused on building
                         intelligent systems that solve real-world product problems. My current work centers on
                         AI-powered job creation, recommendation quality, and recruiter-facing automation at production
@@ -490,7 +548,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skills" data-aos="fade-left">
+                <div class="skills" data-aos="fade-up">
                     <h3>Skills & Technologies</h3>
                     <div class="skills-grid">
                         <div class="skill">
@@ -646,16 +704,25 @@
 
     <footer>
         <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo" aria-label="Back to top">KP</a>
+                <div>
+                    <strong>Kaushik Paul</strong>
+                    <span>SDE 2, Fullstack and AI Agents Developer</span>
+                </div>
+            </div>
             <div class="social-links">
-                <a href="https://github.com/Kaushik-Paul" target="_blank" aria-label="GitHub"><i
+                <a href="https://github.com/Kaushik-Paul" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kaushik-paul-767590215" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/kaushik-paul-767590215" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:contact@kaushikpaul.co.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <p>&copy; 2026 Kaushik Paul. All rights reserved.</p>
         </div>
     </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="app.js"></script>

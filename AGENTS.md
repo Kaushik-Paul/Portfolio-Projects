@@ -49,7 +49,9 @@ of the following. Pick a short kebab-case `<slug>` (e.g. `hf-drive`).
      inline stroke `.logo` SVG (24x24 viewBox), `<h1>`, description `<p>`,
      the `<img src="../resources/<slug>.svg">`, and BOTH hrefs
      (`.redirect-button.primary` and the "click here" link) to the hosted URL.
-   - Keep `<meta name="robots" content="noindex, follow">`.
+   - Keep `<meta name="robots" content="noindex, follow">`, the inline theme
+     bootstrap `<script>`/`<style>` at the top of `<head>`, and the
+     `data-countdown` / `data-redirect-host` elements used by `redirect-page.js`.
 
 3. **`main/redirects/redirect-style.css`**
    - Add a `.<slug> { --project-accent: <color>; }` rule in the accent block
@@ -58,7 +60,9 @@ of the following. Pick a short kebab-case `<slug>` (e.g. `hf-drive`).
 4. **`main/index.html`**
    - Add a `.project-card` inside `.projects-grid` at the requested position
      (default: after the most recent project). Copy an existing card; update
-     the `img src`/`alt`, `<h3>`, description, link `href`/`aria-label`.
+     the `img src`/`alt`, `<h3>`, description, link `href`/`aria-label`, and
+     the card's `style="--card-accent: <color>;"` (same color as the SVG accent).
+   - The hero project counter is filled in by `app.js`; no manual update needed.
    - `data-aos-delay` values are cosmetic stagger only; reusing values is fine.
 
 5. **`main/_redirects`**
@@ -82,6 +86,13 @@ No changes needed for: `robots.txt` (already allows all and references the
 sitemap), `404.html`, `app.js`, `theme.js`.
 
 ## Conventions
+
+- Theme: every page starts `<head>` with the same inline bootstrap snippet
+  (`color-scheme` meta, a small `<script>` that reads `kp-theme-preference`
+  from localStorage and sets `data-theme` on `<html>`, plus an inline
+  background `<style>`). It must stay inline and before any stylesheet so the
+  saved theme is used on first paint with no light-to-dark flash. `theme.js`
+  is loaded with `defer` and only handles buttons and later changes.
 
 - 4-space indentation in HTML/CSS/JS, matching existing files.
 - Redirect pages share `redirect-page.js`; never inline redirect logic.

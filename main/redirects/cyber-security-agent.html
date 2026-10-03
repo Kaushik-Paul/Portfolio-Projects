@@ -3,23 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- Theme bootstrap: must stay inline and first so the first paint uses the saved theme. -->
+    <script>
+        (function () {
+            var source = 'system';
+            try {
+                var stored = window.localStorage.getItem('kp-theme-preference');
+                if (stored === 'light' || stored === 'dark') {
+                    source = stored;
+                }
+            } catch (error) {
+                // Ignore storage errors.
+            }
+            var theme = source === 'system'
+                ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+                : source;
+            var root = document.documentElement;
+            root.dataset.themeSource = source;
+            root.dataset.theme = theme;
+            root.style.colorScheme = theme;
+        })();
+    </script>
+    <style>
+        html { background: #f5f8ff; }
+        html[data-theme='dark'] { background: #070d19; }
+    </style>
     <meta name="robots" content="noindex, follow">
-    <script src="../theme.js"></script>
     <link rel="icon" type="image/svg+xml" href="../resources/rocket-blue.svg">
     <title>Redirecting to Cyber-Security Agent</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="redirect-style.css">
+    <script src="../theme.js" defer></script>
 </head>
 
 <body class="cyber-security">
     <div class="redirect-shell">
-        <div class="redirect-topbar">
-            <a href="../index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to projects</a>
+        <header class="redirect-topbar">
+            <a href="../index.html#projects" class="back-link" aria-label="Back to projects"><i
+                    class="fas fa-arrow-left"></i><span>Back to projects</span></a>
             <div class="theme-switcher" role="group" aria-label="Theme selector">
                 <button type="button" class="theme-toggle" data-theme-option="light" aria-label="Use light theme"
                     title="Light theme">
@@ -34,16 +61,27 @@
                     <i class="fas fa-desktop"></i>
                 </button>
             </div>
-        </div>
+        </header>
 
-        <div class="container">
+        <main class="container">
+            <div class="project-visual">
+                <svg class="countdown-ring" viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="ring-track" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                </svg>
+                <img src="../resources/cyber-security-agent.svg" alt="Cyber-Security Agent" class="project-svg">
+            </div>
+
             <span class="redirect-badge">Launching live project</span>
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2L5 5v6c0 5.25 3.25 10.1 7 11.5 3.75-1.4 7-6.25 7-11.5V5l-7-3z"></path>
-                <path d="M9 12l2 2 4-5"></path>
-            </svg>
-            <h1>Cyber-Security Agent</h1>
+
+            <div class="title-row">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L5 5v6c0 5.25 3.25 10.1 7 11.5 3.75-1.4 7-6.25 7-11.5V5l-7-3z"></path>
+                    <path d="M9 12l2 2 4-5"></path>
+                </svg>
+                <h1>Cyber-Security Agent</h1>
+            </div>
             <p>LLM-first security agent that scans Python code with Semgrep and AI reasoning to deliver structured
                 vulnerability reports with prioritized fixes.</p>
 
@@ -51,16 +89,16 @@
                 <div class="loader-bar"></div>
             </div>
 
-            <img src="../resources/cyber-security-agent.svg" alt="Cyber-Security Agent" class="project-svg">
-
             <div class="redirect-actions">
-                <a class="redirect-button primary" href="https://www.codesecurity.pp.ua/">Open now</a>
+                <a class="redirect-button primary"
+                    href="https://www.codesecurity.pp.ua/">Open now <i class="fas fa-arrow-right"></i></a>
                 <a class="redirect-button secondary" href="../index.html#projects">Back to projects</a>
             </div>
 
-            <p class="redirect-info">You will be redirected automatically in a few seconds. If not, <a
+            <p class="redirect-info">Redirecting in <strong data-countdown>3</strong>s. If nothing happens, <a
                     href="https://www.codesecurity.pp.ua/">click here</a>.</p>
-        </div>
+            <span class="redirect-target" data-redirect-host hidden><i class="fas fa-lock"></i><span></span></span>
+        </main>
     </div>
 
     <script src="redirect-page.js"></script>

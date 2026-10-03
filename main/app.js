@@ -42,6 +42,10 @@ function init404Page() {
 
 function initAOS() {
     if (typeof AOS === 'undefined') {
+        // Never leave content hidden if the animation library fails to load.
+        document.querySelectorAll('[data-aos]').forEach(function (element) {
+            element.classList.add('aos-animate');
+        });
         return;
     }
 
@@ -58,6 +62,7 @@ function initNavigation() {
     var navLinks = document.querySelector('.nav-links');
     var navLinkItems = document.querySelectorAll('.nav-links a');
     var sections = document.querySelectorAll('main section[id]');
+    var backToTop = document.querySelector('.back-to-top');
 
     function updateHeader() {
         if (!header) {
@@ -103,7 +108,7 @@ function initNavigation() {
         });
 
         window.addEventListener('resize', function () {
-            if (window.innerWidth > 860) {
+            if (window.innerWidth > 900) {
                 closeMenu();
             }
         });
@@ -150,10 +155,30 @@ function initNavigation() {
         });
     }
 
+    function updateBackToTop() {
+        if (backToTop) {
+            backToTop.classList.toggle('visible', window.scrollY > 600);
+        }
+    }
+
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
     window.addEventListener('scroll', updateHeader, { passive: true });
     window.addEventListener('scroll', highlightNav, { passive: true });
     window.addEventListener('load', highlightNav);
     updateHeader();
+    updateBackToTop();
+}
+
+function initProjectCount() {
+    var projectCount = document.querySelectorAll('.projects-grid .project-card').length;
+
+    if (!projectCount) {
+        return;
+    }
+
+    document.querySelectorAll('[data-project-count]').forEach(function (element) {
+        element.textContent = String(projectCount);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -162,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
+    initProjectCount();
     initAOS();
     initNavigation();
 });

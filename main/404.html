@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <!-- Theme bootstrap: must stay inline and first so the first paint uses the saved theme. -->
+    <script>
+        (function () {
+            var source = 'system';
+            try {
+                var stored = window.localStorage.getItem('kp-theme-preference');
+                if (stored === 'light' || stored === 'dark') {
+                    source = stored;
+                }
+            } catch (error) {
+                // Ignore storage errors.
+            }
+            var theme = source === 'system'
+                ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+                : source;
+            var root = document.documentElement;
+            root.dataset.themeSource = source;
+            root.dataset.theme = theme;
+            root.style.colorScheme = theme;
+        })();
+    </script>
+    <style>
+        html { background: #f5f8ff; }
+        html[data-theme='dark'] { background: #070d19; }
+    </style>
     <title>Page Not Found - Kaushik's Portfolio</title>
     <meta name="description" content="The page you're looking for doesn't exist or has been moved.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/resources/rocket-blue.svg">
     
-    <script src="/theme.js"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Main Styles -->
     <link rel="stylesheet" href="/style.css">
+    <script src="/theme.js" defer></script>
     
     <!-- Preload critical assets -->
     <link rel="preload" href="/style.css" as="style">
